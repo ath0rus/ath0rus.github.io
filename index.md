@@ -2,8 +2,12 @@
 This page is "My Links" page. Here you will find a few links to different things i have made or work on.
 
 These links are subject to change without notice and  may not always work.\
+
+### These are my other Pages
 [Homepage](https://ath0rus.github.io/Home)\
 [Projects](https://ath0rus.github.io/Projects)\
+
+### Other links
 [Python Tutorial](https://github.com/ath0rus/Python-Tutorial)\
 [Github account](https://github.com/ath0rus)\
 [Cordless Cat](https://discord.gg/q62V7SRfxE) (my Discord server)\
