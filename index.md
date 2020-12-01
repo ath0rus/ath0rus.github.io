@@ -5,7 +5,7 @@ These links are subject to change without notice and  may not always work.\
 
 ### These are my other Pages
 [Homepage](https://ath0rus.github.io/Home)\
-[Projects](https://ath0rus.github.io/Projects)\
+[Projects](https://ath0rus.github.io/Projects)
 
 ### Other links
 [Python Tutorial](https://github.com/ath0rus/Python-Tutorial)\
