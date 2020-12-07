@@ -1,7 +1,7 @@
 # My links page
 This page is "My Links" page. Here you will find a few links to different things I have made or work on.
 
-These links are subject to change without notice and may not always work.\
+These links are subject to change without notice and may not always work.
 
 ### These are my other Pages
 [Homepage](https://ath0rus.github.io/Home)\
