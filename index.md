@@ -1,3 +1,7 @@
+#Important news
+This website is now out of date and has been updated and moved to [ath0rus.com](https://ath0rus.com)
+
+<!--
 # My links page
 This page is "My Links" page. Here you will find a few links to different things I have made or work on.
 
@@ -14,3 +18,4 @@ These links are subject to change without notice and may not always work.
 [Youtube](https://www.youtube.com/channel/UCJjoKeRSMz5Lt2XwNVmxmQQ)\
 [Twitter](https://twitter.com/ath0rus)\
 [Stack Overflow](https://stackoverflow.com/users/10312341/ath0rus)
+-->
