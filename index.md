@@ -1,5 +1,6 @@
 # Important news
-This website is now out of date and has been updated and moved to [ath0rus.com](https://ath0rus.com)
+Good news, This site is coming back to some extent!\
+As to how this site will look, I am not sure yet. This is a big WIP
 
 <!--
 # My links page
