@@ -2,6 +2,9 @@
 Good news, This site is coming back to some extent!\
 As to how this site will look, I am not sure yet. This is a big WIP
 
+---
+
+[Credits Page](/credits/index.md)
 <!--
 # My links page
 This page is "My Links" page. Here you will find a few links to different things I have made or work on.
