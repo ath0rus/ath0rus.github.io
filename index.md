@@ -4,7 +4,7 @@ As to how this site will look, I am not sure yet. This is a big WIP
 
 ---
 
-[Credits Page](/credits/index.md)
+[Credits Page/resources used](/credits/index.md)
 
 
 <!--
