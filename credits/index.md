@@ -1,4 +1,4 @@
-## Here you will find a link to all the assets and software I use for my projects,   
+## Here you will find a link to all the assets and software I use for my projects   
 This site will be constantly added to overtime when I use more software or assets
 
 ---
