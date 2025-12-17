@@ -37,4 +37,8 @@ This site will be constantly added to overtime when I use more software or asset
 - [Polycam Free](https://poly.cam/)
 - [Reality Scan/Capture](https://www.realityscan.com/en-US)
 
+### Models
+- [Monobloc garden chair cheap plastic](https://sketchfab.com/3d-models/monobloc-garden-chair-cheap-plastic-06d0836fac844c74ae652214ded4b6b9#download) (Sketchfab)
+- [Mystical Phoenix Minimalist Sculpture 3D print model](https://www.cgtrader.com/3d-print-models/art/sculptures/mystical-phoenix-minimalist-sculpture) (CGtrader)
+
 #### If any of these linsk are broke, Please contact me so I can correct it
