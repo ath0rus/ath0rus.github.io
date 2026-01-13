@@ -15,7 +15,17 @@ body {
 header {
     padding: 2rem 1rem;
 }
+.banner {
+    max-height: 50px;
+    background-color: #84080a;
+    padding: 10px;
+}
 
+.banner__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
 h1 {
     font-weight: 700;
     font-size: 2rem;
@@ -258,4 +268,5 @@ nav button:hover {
 .button:hover {
     background-color: #333;
     transform: translateY(-1px);
+
 }
