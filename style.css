@@ -35,7 +35,11 @@ header {
 
 .lightbox-content {
   max-height: 100vh;   /* keep content within the viewport */
-  overflow: auto; /* let the parent handle scrolling */
+  overflow-y: auto; /* let the parent handle scrolling */
+}
+
+body.lightbox-open {
+  overflow: hidden; /* stops the page behind from scrolling */
 }
 
 h1 {
@@ -282,5 +286,6 @@ nav button:hover {
     transform: translateY(-1px);
 
 }
+
 
 
