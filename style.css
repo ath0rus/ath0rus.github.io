@@ -26,6 +26,18 @@ header {
     margin: 0 auto;
     padding: 5px;
 }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;   /* scrollbar on the lightbox */
+}
+
+.lightbox-content {
+  max-height: 100vh;   /* keep content within the viewport */
+  overflow: auto; /* let the parent handle scrolling */
+}
+
 h1 {
     font-weight: 700;
     font-size: 2rem;
@@ -270,4 +282,5 @@ nav button:hover {
     transform: translateY(-1px);
 
 }
+
 
