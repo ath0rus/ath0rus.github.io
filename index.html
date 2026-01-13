@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ath0rus | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header header--side">
+    <img src="thumbs/Logo.png" alt="ath0rus Logo" class="logo" />
+
+    <div class="header-text">
+      <h1>ath0rus</h1>
+      <p class="subtitle">Hobbyist Artist</p>
+      <p class="description">write stuff here</p>
+    </div>
+  </header>
+
+
+  <div class="filters" id="filters">
+    <!-- <a href="page1.html" class="button">all</a> -->
+    <!-- <a href="page2.html" class="button">commission</a> -->
+    <!-- <a href="page3.html" class="button">personal projects</a> -->
+    <!-- <a href="page4.html" class="button">collabs</a> -->
+    <!-- <a href="page1.html" class="button">links</a> -->
+    <!-- <a href="page2.html" class="button">credits</a> -->
+    <button class="filter-btn" data-filter="all">all</button>
+    <button class="filter-btn" data-filter="commission">commission</button>
+    <button class="filter-btn" data-filter="personal">personal projects</button>
+    <button class="filter-btn" data-filter="collabs">collabs</button>
+  </div>
+
+
+  <section class="gallery">
+    <div class="gallery-item" data-title="Illenium Fan Art (Cover art concept)"
+      data-blurb="This scene is a fan art piece inspired by Illenium (Illenium Album (2023)). My goal was to create an overgrown, The Last of Us style environment that could work as song or album art. I made it over the school holidays (I work at a school), it took the full two weeks (and a bit more) to finish.
+One of the biggest parts of this project was making the textures for the planter beds. My first proper attempt at texturing in Substance Designer, so it’s definitely rough around the edges, but I learned a ton from it. I used Arborea heavily for the foliage (giant vines, grass, and ferns), and the ivy on the back wall was drawn on as a custom bezier curves and used BagaIvy to turn that into Ivy. I also used KitBash3D (cargo) for a fair few of the texures for the scene.
+The phoenix model came from CGTrader, which a friend helped me find after I asked for a detailed and good-looking one specifically for this scene. Overall, this project was a fun challenge and a great learning experience. "
+      data-link="/placeholder.html" data-tags="all, personal">
+      <img src="/thumbs/PhoenixHall.png" alt="Artwork 1" />
+    </div>
+
+    <div class="gallery-item" data-title="Rampage Rally"
+      data-blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in efficitur lacus, vitae gravida massa. Aliquam nec ante sit amet nibh feugiat lobortis. Fusce aliquet rutrum accumsan. Praesent tristique euismod leo. Praesent finibus risus sed ipsum molestie iaculis. Aliquam non iaculis massa, molestie mollis odio. Donec ullamcorper lacinia convallis. Cras in felis eu quam interdum eleifend. "
+      data-link="/placeholder.html" data-tags="all, personal">
+      <img src="thumbs/RR.png" alt="Thumbnail" />
+    </div>
+
+    <div class="gallery-item" data-title="God Loves Country Music"
+      data-blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in efficitur lacus, vitae gravida massa. Aliquam nec ante sit amet nibh feugiat lobortis. Fusce aliquet rutrum accumsan. Praesent tristique euismod leo. Praesent finibus risus sed ipsum molestie iaculis. Aliquam non iaculis massa, molestie mollis odio. Donec ullamcorper lacinia convallis. Cras in felis eu quam interdum eleifend. "
+      data-link="/placeholder.html" data-tags="all, commission">
+      <img src="/thumbs/GodLovesCountrMusic.png" alt="Thumbnail" />
+    </div>
+
+    <div class="gallery-item" data-title="He's Got the whole World"
+      data-blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in efficitur lacus, vitae gravida massa. Aliquam nec ante sit amet nibh feugiat lobortis. Fusce aliquet rutrum accumsan. Praesent tristique euismod leo. Praesent finibus risus sed ipsum molestie iaculis. Aliquam non iaculis massa, molestie mollis odio. Donec ullamcorper lacinia convallis. Cras in felis eu quam interdum eleifend. "
+      data-link="/placeholder.html" data-tags="all, commission">
+      <img src="/thumbs/He'sGotTheWholeWorld.png" alt="Thumbnail" />
+    </div>
+
+    <div class="gallery-item" data-title="Coming Soon!"
+      data-blurb="More content coming soon, stay tuned!"
+      data-link="/placeholder.html" data-tags="all, commission, personal, collabs">
+      <img src="https://placehold.co/512x512?text=More Coming soon!" alt="Thumbnail" />
+    </div>
+
+  </section>
+
+  <!-- Template for gallery item with tags, Title, blurb, and link, press Alt + Shift + f for formatting
+
+    <div class="gallery-item" data-title="Title Here"
+      data-blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in efficitur lacus, vitae gravida massa. Aliquam nec ante sit amet nibh feugiat lobortis. Fusce aliquet rutrum accumsan. Praesent tristique euismod leo. Praesent finibus risus sed ipsum molestie iaculis. Aliquam non iaculis massa, molestie mollis odio. Donec ullamcorper lacinia convallis. Cras in felis eu quam interdum eleifend. "
+      data-link="/placeholder.html" data-tags="all, commission, personal, collabs">
+      <img src="https://placehold.co/512x512?text=Image Missing" alt="Thumbnail" />
+    </div>
+    
+  -->
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="close">&times;</span>
+
+    <div class="lightbox-content">
+      <h2 id="lightbox-title"></h2>
+      <img src="" alt="Zoomed Image" id="lightbox-img" />
+      <p id="lightbox-blurb"></p>
+      <a id="lightbox-link" href="#" target="_blank" rel="noopener">Read full article</a>
+    </div>
+  </div>
+
+
+  <script>
+    // Light box functionality
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxTitle = document.getElementById("lightbox-title");
+    const lightboxBlurb = document.getElementById("lightbox-blurb");
+    const lightboxLink = document.getElementById("lightbox-link");
+    const close = document.getElementById("close");
+
+    document.querySelectorAll(".gallery img").forEach((img) => {
+      img.addEventListener("click", () => {
+        const item = img.closest(".gallery-item"); // wrapper div
+
+        lightbox.classList.add("active");
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+
+        // Fill text from wrapper (if present)
+        lightboxTitle.textContent = item?.dataset.title || "";
+        lightboxBlurb.textContent = item?.dataset.blurb || "";
+
+        const link = item?.dataset.link;
+        if (link) {
+          lightboxLink.href = link;
+          lightboxLink.style.display = "inline-block";
+        } else {
+          lightboxLink.style.display = "none";
+        }
+      });
+    });
+
+    close.addEventListener("click", () => {
+      lightbox.classList.remove("active");
+    });
+
+    // close when clicking outside the content box
+    lightbox.addEventListener("click", (e) => {
+      if (!e.target.closest(".lightbox-content")) {
+        lightbox.classList.remove("active");
+      }
+    });
+
+    // Filter functionality
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const items = document.querySelectorAll(".gallery-item");
+
+    function setActiveButton(activeBtn) {
+      filterButtons.forEach((b) => b.classList.remove("is-active"));
+      activeBtn.classList.add("is-active");
+    }
+
+    function filterGallery(tag) {
+      items.forEach((item) => {
+        const tags = (item.dataset.tags || "")
+          .split(",")
+          .map((t) => t.trim().toLowerCase())
+          .filter(Boolean);
+
+        const show = tag === "all" || tags.includes(tag);
+        item.classList.toggle("is-hidden", !show);
+      });
+    }
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tag = btn.dataset.filter.toLowerCase();
+        setActiveButton(btn);
+        filterGallery(tag);
+      });
+    });
+
+    // initial state
+    filterGallery("all");
+  </script>
+
+</body>
+
+</html>

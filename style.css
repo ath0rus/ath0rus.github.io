@@ -1,0 +1,261 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+p.subtitle {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+p.description {
+    max-width: 700px;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+/* Header */
+.header--side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 2rem 1rem;
+}
+
+.header--side .header-text {
+    text-align: left;
+    max-width: 700px;
+}
+
+@media (max-width: 600px) {
+    .header--side {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header--side .header-text {
+        text-align: center;
+    }
+}
+
+/* Logo */
+.logo {
+    width: clamp(80px, 12vw, 200px);
+    height: auto; /* prevent squish....*/
+    display: block;
+}
+/* Logo Mobile version */
+@media (max-width: 600px) {
+  .logo {
+    width: clamp(80px, 40vw, 200px);
+  }
+}
+
+/* Nav */
+nav {
+    background-color: #1a1a1a;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: #eee;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background: #333;
+}
+
+@media (max-width: 600px) {
+    nav button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+/* Gallery Filters */
+.gallery-item.is-hidden {
+  display: none;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+}
+
+.filter-btn {
+  background: #84080a;
+  color: #eee;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background: #3d0000;
+}
+
+.filter-btn.is-active {
+  outline: 2px solid #eee;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Lightbox layout + text sizing */
+.lightbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* controls how much narrower text is than the image area */
+    --side-padding: 10%;
+    max-width: 70%;
+}
+
+#lightbox-title {
+    max-width: calc(100% - var(--side-padding));
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+#lightbox-img {
+    max-width: 100%;
+    max-height: 70vh;
+    height: auto;
+    border-radius: 10px;
+    animation: zoomIn 0.3s ease;
+}
+
+#lightbox-blurb {
+    max-width: calc(100% - var(--side-padding));
+    margin-top: 14px;
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+    line-height: 1.5;
+
+    max-height: 20vh;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+#lightbox-link {
+    margin-top: 6px;
+    font-size: 0.95rem;
+}
+
+/* Zoom animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    margin: 0.25rem;
+
+    background-color: #cf0000;
+    color: #eee;
+    text-decoration: none;
+
+    border-radius: 6px;
+    font-size: 0.9rem;
+
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #333;
+    transform: translateY(-1px);
+}
